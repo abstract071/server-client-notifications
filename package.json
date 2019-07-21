@@ -1,0 +1,23 @@
+{
+  "name": "server-client-notifications",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:lp": "NODE_APP_MODE=lp nodemon src/index.js -r dotenv/config",
+    "start:ws": "NODE_APP_MODE=ws nodemon src/index.js -r dotenv/config",
+    "start:sse": "NODE_APP_MODE=sse nodemon src/index.js -r dotenv/config",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
